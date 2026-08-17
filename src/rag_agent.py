@@ -9,7 +9,7 @@ la BDPM officielle.
 
 Choix assumé : pas de recherche vectorielle/embeddings ici, une recherche
 lexicale suffit sur un référentiel à vocabulaire fixe et exact (noms de
-médicaments et de substances, pas du texte libre ambigu) — et reste
+médicaments et de substances, pas du texte libre ambigu), et reste
 transposable à un vrai moteur vectoriel si le volume de requêtes en langage
 très libre l'exigeait un jour.
 """
@@ -49,7 +49,7 @@ def rechercher_medicaments(query, dim_medicaments, fact_compositions, top_k=5):
 
 def construire_contexte(cis_codes, dim_medicaments, fact_compositions, fact_presentations):
     """Construit un bloc de texte structuré, une fiche par médicament trouvé,
-    strictement à partir des données réelles de la base — rien n'est inventé
+    strictement à partir des données réelles de la base, rien n'est inventé
     ni complété ici."""
     blocs = []
     for cis in cis_codes:

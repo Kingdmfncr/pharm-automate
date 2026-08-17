@@ -1,6 +1,6 @@
 # PharmAUtomate
 
-⚠️ **Projet personnel (PoC)** — démonstration de méthode. Données **réelles et publiques** (pas simulées) : Base de Données Publique des Médicaments (BDPM), diffusée par l'ANSM sous licence ouverte Etalab. Aucune donnée patient, aucune donnée confidentielle, aucun laboratoire ni ESN cité. Source citée à chaque usage conformément à la licence : [base-donnees-publique.medicaments.gouv.fr](https://base-donnees-publique.medicaments.gouv.fr).
+⚠️ **Projet personnel (PoC)**, démonstration de méthode. Données **réelles et publiques** (pas simulées) : Base de Données Publique des Médicaments (BDPM), diffusée par l'ANSM sous licence ouverte Etalab. Aucune donnée patient, aucune donnée confidentielle, aucun laboratoire ni ESN cité. Source citée à chaque usage conformément à la licence : [base-donnees-publique.medicaments.gouv.fr](https://base-donnees-publique.medicaments.gouv.fr).
 
 Je voulais comprendre comment structurer et interroger de façon fiable un référentiel réglementaire volumineux et non trivial à exploiter (encodage hérité, fichiers multiples à relier, vocabulaire médical exact), sans jamais laisser une IA halluciner une réponse sur un sujet aussi sensible qu'un médicament, alors j'ai construit ce projet.
 
@@ -49,5 +49,5 @@ Cette architecture se transpose à tout référentiel réglementaire ou techniqu
 ---
 
 Playbook complet (Définitions/Process/Documentation/Templates) : [`PLAYBOOK.md`](PLAYBOOK.md).
-Construit avec l'IA — méthode documentée dans [`PROMPT_LOG.md`](PROMPT_LOG.md).
-**Gisèle Metouck** — Consultante Data Steward & Gouvernance · [GitHub](https://github.com/Kingdmfncr)
+Construit avec l'IA, méthode documentée dans [`PROMPT_LOG.md`](PROMPT_LOG.md).
+**Gisèle Metouck**, Consultante Data Steward & Gouvernance · [GitHub](https://github.com/Kingdmfncr)

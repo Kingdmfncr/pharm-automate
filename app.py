@@ -1,4 +1,4 @@
-"""PharmAUtomate — Pipeline de structuration de données réglementaires (Santé/Pharma).
+"""PharmAUtomate, Pipeline de structuration de données réglementaires (Santé/Pharma).
 Ingestion de la BDPM (ANSM, licence ouverte Etalab), structuration relationnelle
 DuckDB, et recherche cadrée (RAG lexical) avec réponses sourcées et citées.
 """
@@ -70,7 +70,7 @@ with st.sidebar:
     st.markdown(f"<hr style='border-color:{C_BORDER};'>", unsafe_allow_html=True)
 
     api_key = st.text_input("Clé API Anthropic (optionnel)", type="password",
-                             help="BYOK — utilisée uniquement pour synthétiser la réponse, jamais stockée.")
+                             help="BYOK, utilisée uniquement pour synthétiser la réponse, jamais stockée.")
     st.caption("🔒 Sans clé : les fiches sources trouvées s'affichent directement, sans synthèse IA.")
 
     st.markdown(f"<hr style='border-color:{C_BORDER};'>", unsafe_allow_html=True)
@@ -82,7 +82,7 @@ with st.sidebar:
         f"référentiel public des médicaments. Dernière synchronisation locale : {date_maj}. "
         "Source : base-donnees-publique.medicaments.gouv.fr"
         "</div>", unsafe_allow_html=True)
-    st.caption("Construit avec l'IA — Gisèle Metouck")
+    st.caption("Construit avec l'IA, Gisèle Metouck")
     st.caption("[GitHub](https://github.com/Kingdmfncr)")
 
 st.title("PharmAUtomate")
@@ -128,14 +128,14 @@ with tabs[1]:
         if recherche:
             df_affiche = df_affiche[df_affiche["denomination"].str.contains(recherche, case=False, na=False)]
         st.dataframe(df_affiche.head(500), use_container_width=True, hide_index=True)
-        st.caption(f"{len(df_affiche)} résultat(s) — affichage limité aux 500 premiers.")
+        st.caption(f"{len(df_affiche)} résultat(s), affichage limité aux 500 premiers.")
     with sous_tab_compo:
         st.dataframe(fact_compositions.head(500), use_container_width=True, hide_index=True)
     with sous_tab_pres:
         st.dataframe(fact_presentations.head(500), use_container_width=True, hide_index=True)
 
 with tabs[2]:
-    st.markdown("**Intégrité référentielle** — compositions et présentations dont le code CIS n'existe pas dans le référentiel médicaments (signalé, jamais corrigé en silence) :")
+    st.markdown("**Intégrité référentielle**, compositions et présentations dont le code CIS n'existe pas dans le référentiel médicaments (signalé, jamais corrigé en silence) :")
     d1, d2 = st.columns(2)
     d1.metric("Compositions orphelines", qualite["compositions_orphelines"])
     d2.metric("Présentations orphelines", qualite["presentations_orphelines"])

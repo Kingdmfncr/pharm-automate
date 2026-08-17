@@ -1,4 +1,4 @@
-"""Tests unitaires — structuration DuckDB et agent de recherche.
+"""Tests unitaires, structuration DuckDB et agent de recherche.
 DataFrames construits à la main (pas de téléchargement réseau dans les tests,
 pour rester rapides et déterministes) plutôt que le vrai jeu BDPM.
 """
