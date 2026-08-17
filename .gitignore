@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+data/raw/*.txt
+data/raw/date_telechargement.txt
+data/processed/*.duckdb
+.pytest_cache/
