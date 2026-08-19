@@ -1,5 +1,7 @@
 # PharmAUtomate
 
+🔗 **Démo live** : [pharm-automate-aulwv7ggcqkko6ztdrua2d.streamlit.app](https://pharm-automate-aulwv7ggcqkko6ztdrua2d.streamlit.app)
+
 ⚠️ **Projet personnel (PoC)**, démonstration de méthode. Données **réelles et publiques** (pas simulées) : Base de Données Publique des Médicaments (BDPM), diffusée par l'ANSM sous licence ouverte Etalab. Aucune donnée patient, aucune donnée confidentielle, aucun laboratoire ni ESN cité. Source citée à chaque usage conformément à la licence : [base-donnees-publique.medicaments.gouv.fr](https://base-donnees-publique.medicaments.gouv.fr).
 
 Je voulais comprendre comment structurer et interroger de façon fiable un référentiel réglementaire volumineux et non trivial à exploiter (encodage hérité, fichiers multiples à relier, vocabulaire médical exact), sans jamais laisser une IA halluciner une réponse sur un sujet aussi sensible qu'un médicament, alors j'ai construit ce projet.
