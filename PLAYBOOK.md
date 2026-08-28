@@ -3,6 +3,7 @@
 > Guide opératoire structuré en 4 volets (Définitions / Process / Documentation / Templates),
 > pour comprendre, réutiliser ou transposer ce projet à un contexte réel.
 > Rappel : projet personnel (PoC), données réelles et publiques (BDPM/ANSM, licence Etalab), voir [`README.md`](README.md).
+> **Dernière mise à jour** : 17/08/2026
 
 ---
 
